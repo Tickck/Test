@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+</head>
+<body>
+
+	<input type="text" value="" id="num1">
+	<input type="text" value="" id="num2">
+	<input type="button" value="计算" id="btn">
+	<label for="">计算结果：</label>
+	<input type="text" value="" id="num3">
+
+</body>
+<script type="text/javascript">
+var btn = document.getElementById('btn');
+var num1 = document.getElementById('num1');
+var num2 = document.getElementById('num2');
+var num3 = document.getElementById('num3');
+btn.onclick = function(){
+ var sum= parseInt(num1.value) +parseInt(num2.value);
+ num3.value=sum;
+}
+</script>
+</html>
